@@ -1,26 +1,10 @@
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+<!DOCTYPE html>
+<head>
+<title>San Juan Ranch - Performance Quarter Horses</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-
-## Horizontal Rules
-
-----
-
-
-## Emphasis
-
-**This should be bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-theme: minima
+<body>
+<div style="width: 400px; height: 600px; background-color: gold, text-align: center"><h1>Coming Soon</h1></div>
+</body>
