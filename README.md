@@ -23,3 +23,4 @@ _This is italic text_
 
 ~~Strikethrough~~
 
+theme: cayman
