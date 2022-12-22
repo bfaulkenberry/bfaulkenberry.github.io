@@ -23,4 +23,4 @@ _This is italic text_
 
 ~~Strikethrough~~
 
-theme: Cayman
+theme: minima
