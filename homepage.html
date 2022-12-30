@@ -214,16 +214,73 @@ body {
 </head>
 
 <body>
+  .carousel-inner img{width:94%;height:200px;}
+.overpic{position:absolute;top:10%;left:20%;opacity:0.5;z-index:2;}
+	.overpic img{width:250px;height:300px;}
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<div class="container-fluid hero-slide">
+	<div class="overpic">
+	  <div class="caption">
+		 <img src="http://placeimg.com/200/200/nature" alt="">
+	  </div>
+	</div>
+  <div class="row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://placekitten.com/300/200" id="item" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="http://placekitten.com/300/200" id="item" alt="Chania">
+        </div>
+
+        <div class="item">
+          <img src="http://placekitten.com/300/200" id="item" alt="Flower">
+        </div>
+
+        <div class="item">
+          <img src="http://placekitten.com/300/200" id="item" alt="Flower">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
-<body translate="no">
-  <div id="app"><div data-reactroot="" id="carousel" class="noselect"><div class="arrow arrow-left"><i class="fi-arrow-left"></i></div><span><div class="item level2">9</div><div class="item level1">10</div><div class="item level0">1</div><div class="item level-1">2</div><div class="item level-2">3</div></span><div class="arrow arrow-right"><i class="fi-arrow-right"></i></div></div></div>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-
+<!--<body translate="no">
+  <div id="app">
+    <div data-reactroot="" id="carousel" class="noselect">
+      <div class="arrow arrow-left">
+        <i class="fi-arrow-left"></i>
+      </div>
+      <span>
+        <div class="item level2">9</div>
+        <div class="item level1">10</div>
+        <div class="item level0">1</div>
+        <div class="item level-1">2</div>
+        <div class="item level-2">3</div>
+      </span><div class="arrow arrow-right">
+      <i class="fi-arrow-right"></i>
+      </div>
+    </div>
+  </div>
+  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
-      <script id="rendered-js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+  <script id="rendered-js">
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 class Carousel extends React.Component {
@@ -309,13 +366,6 @@ class Item extends React.Component {
 var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 ReactDOM.render( /*#__PURE__*/React.createElement(Carousel, { items: items, active: 0 }), document.getElementById('app'));
 //# sourceURL=pen.js
-    </script>
-
-  
-
-
-
-
- 
-</body>
+</script>
+</body>-->
 </html>
