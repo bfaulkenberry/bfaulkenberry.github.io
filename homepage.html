@@ -30,16 +30,12 @@ div, svg {
   top:50%;
   transform:translate(-50%,-50%);
 }
-Run Pen
 
-Resources
 </style>
 
 <body>
 
-	<div class="stage">
-  
-  
+<div class="stage">
 <div class="container">
   <div class="ring">
     <div class="img"></div>
@@ -54,7 +50,6 @@ Resources
     <div class="img"></div>
   </div>
 </div>
-
 </div>
 
 <script>
@@ -120,9 +115,6 @@ function dragEnd(e){
 function getBgPos(i){ //returns the background-position string to create parallax movement in each image
   return ( 100-gsap.utils.wrap(0,360,gsap.getProperty('.ring', 'rotationY')-180-i*36)/360*500 )+'px 0px';
 }
-Run Pen
-
-Resources
 </script>
 </body>
 </html>
