@@ -1,0 +1,149 @@
+/*This page contains a template to be used for all style sheets. Styles are created with multiple device capabilities in mind*/
+body {
+    background-color: tan;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+    }
+}
+
+/*Notes and examples about media queries for menus*/
+/*navbar container*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*navbar links*/
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*Media Queries for columns*/
+/*Create four equal columns that floats next to each other*/
+.column {
+    float: left;
+    width: 25%;
+}
+
+/*On screens that are 992px wide or less, go from four columns to two columns*/
+.column {
+    float: left;
+    width: 50%;
+}
+
+/*On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*Flexbox example*/
+/* Container for flexboxes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+    flex: 25%;
+    padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+/* On screens that are 600px wide or less, make columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Hide elements with media queries */
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 600px) {
+    div.example {
+        display: none;
+    }
+}
+
+/* The flex-direction property */
+/* The column value stacks the flex items vertically */
+/* space-around value displays the flex items with space before, between, and after the lines */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: stretch;
+    align-items: baseline;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: stretch;
+    align-content: center;
+    align-content: flex-start;
+    align-content: flex-end;
+}
+
+/* Perfect Centering */
+.flex-container {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* example */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* change 
