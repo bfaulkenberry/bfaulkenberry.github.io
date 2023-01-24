@@ -146,4 +146,92 @@ body {
     }
 }
 
-/* change 
+/* change the percentage of the flex property of the flex items to create different layouts for different screen sizes.
+/* example */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-left {
+    flex: 50%;
+}
+
+.flex-item-right {
+    flex: 50%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+    }
+}
+
+/* Display Property to make a grid container */
+/* grid-gap property is shorthand for the grid-row-gap and grid-column-gap properties */
+.grid-container {
+    display: grid;
+    display: inline-grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-gap: 50px 100px;
+    grid-gap: 50px;
+}
+
+/* Grid lines */
+/* example */
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* grid-template-columns property defines the number of columns in your grid layout, and can define the width of each column */
+/* value is a space separated list, each value defines the width of the respective column */
+/* justify-content property used to align the whole grid inside the container */
+/* example */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 80px 200px auto 40px;
+    grid-template-rows: 80px 200px;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+    justify-content: start;
+    justify-content: end;
+    align-content: center;
+    align-content: space-evenly;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: start;
+    align-content: end;
+}
+
+/* grid-column property - defines on which column to place an item */
+/* make item1 start on column 1 and end before column 5 */
+/* make item1 start on column 1 and span 3 columns */
+.item1 {
+    grid-column: 1 / 5;
+    grid-column: 1 / span 3;
+}
+/* make item2 start on column 2 and span 3 columns */
+.item2 {
+    grid-column: 2 / span 3;
+}
+
+/* grid-row property - defines on which row to place an item */
+/* make item1 start on row-line 1 and end on row-line 4 */
+.item1 {
+    grid-row: 1 / 4;
+    grid-row: 1 / span 2;
+}
+
+/* grid-area property - can be used as a shorthand property for the grid-row-start, grid-row-end, grid-column-start, and grid-column-end properties */
+/* make item8 start on row-line 2 and column-line 1, and span 2 rows and 3 columns */
+.item8 {
+    grid-area: 2 / 1 / span 2 / span 3;
+}
